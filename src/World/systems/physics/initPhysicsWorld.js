@@ -13,6 +13,7 @@ function initPhysicsWorld(Ammo) {
     solver = new Ammo.btSequentialImpulseConstraintSolver();
     physicsWorld = new Ammo.btDiscreteDynamicsWorld( dispatcher, broadphase, solver, collisionConfiguration );
     physicsWorld.setGravity( new Ammo.btVector3( 0, -9.82, 0 ) );
+
     physicsWorld.tick = (delta) => physicsWorld.stepSimulation(delta, 10);
 
     return physicsWorld;
