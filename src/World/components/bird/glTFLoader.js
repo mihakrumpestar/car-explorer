@@ -3,7 +3,9 @@ import { GLTFLoader } from '../../../../vendor/examples/jsm/loaders/GLTFLoader.j
 async function glTFLoader(path) {
     const loader = new GLTFLoader();
   
-    const model = await loader.loadAsync(path);
+    const [model] = await Promise.all([
+      loader.loadAsync(path),
+    ]);
   
     return model;
   }

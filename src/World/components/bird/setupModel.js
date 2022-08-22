@@ -8,8 +8,8 @@ async function setupModel(Ammo, path, mass, position, rotation, scale, movement)
 
   let [mesh, body] = await glTFPhysicsDefault(Ammo, data, mass, position, rotation, scale, movement);
 
-  console.log({mesh});
-  console.log({body});
+  //console.log({mesh});
+  //console.log({body});
 
   return [mesh, body];
 }
