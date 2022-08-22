@@ -2,6 +2,9 @@ import { World } from './World/World.js';
 
 // create the main function
 async function main(Ammo) {
+  let score = document.getElementById('score').firstElementChild;
+  score.innerHTML = localStorage.getItem("score");
+
   // Get a reference to the container element
   const container = document.querySelector('#scene-container');
   
