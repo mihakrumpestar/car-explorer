@@ -17,7 +17,5 @@ async function main(Ammo) {
   
 // call main to start the app
 Ammo().then((Ammo) => {
-  main(Ammo).catch((err) => {
-    console.error(err);
-  });
+  main(Ammo);
 });
