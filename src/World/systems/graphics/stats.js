@@ -5,6 +5,7 @@ function createStats() {
     stats.domElement.style.position = 'absolute';
     stats.domElement.style.top = '0px';
     stats.domElement.style.left = '80px';
+    stats.domElement.style['z-index'] = 0;
 
     stats.tick = () => stats.update();
     
