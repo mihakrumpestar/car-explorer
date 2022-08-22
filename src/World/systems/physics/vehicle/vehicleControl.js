@@ -1,7 +1,7 @@
 
 function vehicleControl() {
     // Keybord actions
-    let actions = {};
+    window.actions = {};
     let keysActions = {
         "KeyW":'acceleration',
         "KeyS":'braking',
@@ -16,7 +16,7 @@ function vehicleControl() {
     function keyup(e) {
       if(keysActions[e.code]) {
         //console.log(e);
-        actions[keysActions[e.code]] = false;
+        window.actions[keysActions[e.code]] = false;
         e.preventDefault();
         e.stopPropagation();
         return false;
@@ -25,7 +25,7 @@ function vehicleControl() {
 
     function keydown(e) {
       if(keysActions[e.code]) {
-        actions[keysActions[e.code]] = true;
+        window.actions[keysActions[e.code]] = true;
         e.preventDefault();
         e.stopPropagation();
         return false;

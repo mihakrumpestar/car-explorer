@@ -9,8 +9,8 @@ function createControls(camera, canvas) {
   // this.controls.autoRotate = true;
   controls.enableDamping = true;
   controls.maxPolarAngle = Math.PI/2;  // set to horiton, so camera can't go lover when in orbit mode
-  controls.minDistance = 3; // min distance from target
-  controls.maxDistance = 100;  // max distance from target
+  controls.minDistance = 7; // min distance from target
+  controls.maxDistance = 50;  // max distance from target
 
   //controls.tick = () => controls.update();
 
