@@ -31,8 +31,6 @@ function vehicleControl() {
         return false;
       }
     }
-
-    return actions;
 }
 
 export { vehicleControl }
