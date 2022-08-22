@@ -8,8 +8,9 @@ function createControls(camera, canvas) {
 
   // this.controls.autoRotate = true;
   controls.enableDamping = true;
+  controls.maxPolarAngle = Math.PI/2;  // set to horiton, so camera can't go lover when in orbit mode
 
-  controls.tick = () => controls.update();
+  //controls.tick = () => controls.update();
 
   return controls;
 }
