@@ -1,4 +1,7 @@
 
+# Loaded from script tab in Blender
+
+
 bl_info = {
     "name": "customPropertiesRock on selection",
 }
