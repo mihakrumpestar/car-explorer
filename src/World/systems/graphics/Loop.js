@@ -3,7 +3,8 @@ import { Clock } from './../../../../../vendor/build/three/three.module.js';
 const clock = new Clock();
 
 class Loop {
-  constructor(camera, scene, renderer) {
+  constructor(Ammo, camera, scene, renderer) {
+    this.TRANSFORM_AUX = new Ammo.btTransform();
     this.camera = camera;
     this.scene = scene;
     this.renderer = renderer;
@@ -30,7 +31,7 @@ class Loop {
   
     // update all objects
     for (const object of this.updatables) {
-      object.tick(delta);
+      object.tick(delta, this.TRANSFORM_AUX);
     }
   }
 }
