@@ -9,6 +9,10 @@ function createChassisMesh(w, l, h) {
     var shape = new BoxGeometry(w, l, h, 1, 1, 1);
     var mesh = new Mesh(shape, materialInteractive);
     //scene.add(mesh);
+
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+
     return mesh;
 }
 

@@ -11,6 +11,10 @@ function createWheelMesh(radius, width) {
     let mesh = new Mesh(t, materialInteractive);
     mesh.add(new Mesh(new BoxGeometry(width * 1.5, radius * 1.75, radius*.25, 1, 1, 1), materialInteractive));
     //scene.add(mesh);
+
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+
     return mesh;
 }
 
