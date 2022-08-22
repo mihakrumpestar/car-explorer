@@ -1,4 +1,4 @@
-import { PerspectiveCamera } from './../../../vendor/build/three/three.module.js';
+import { Vector3, PerspectiveCamera } from './../../../vendor/build/three/three.module.js';
 
 function createCamera() {
   const camera = new PerspectiveCamera(
@@ -9,7 +9,8 @@ function createCamera() {
   );
 
   // move the camera back so we can view the scene
-  camera.position.set(-130, 120, 440);
+  camera.position.set(-10.84, 10.84, -95.1);
+  camera.lookAt(new Vector3( 1.73, -100.70, -0.85 ));
 
   return camera;
 }

@@ -7,8 +7,6 @@ async function setupModel(path, objectProperties) {
   await objectProperties.createBody();
   await objectProperties.setStaticMovement();
   await objectProperties.setTick();
-
-  return objectProperties.export();
 }
 
 export { setupModel };
