@@ -12,7 +12,7 @@ async function main(Ammo) {
   await world.init();
   
   // start the animation loop
-  world.start();
+  //world.start();
 }
   
 // call main to start the app
