@@ -6,7 +6,7 @@ function vehicleControl() {
         "KeyW":'acceleration',
         "KeyS":'braking',
         "KeyA":'left',
-        "KeyD":'right'
+        "KeyD":'right',
     };
 
 
