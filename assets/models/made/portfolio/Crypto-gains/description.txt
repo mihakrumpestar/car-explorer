@@ -1,0 +1,4 @@
+Crypto-gains
+
+Application to monitor gains or loses when trading crypto
+Aplication made in Laravel + Vue.
