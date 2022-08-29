@@ -1,4 +1,6 @@
+# car-explorer-sandbox
 
+Simple car sandbox game made in JavaScript using Three.js and ammo.js.
 
 ## Start
 
