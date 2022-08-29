@@ -1,0 +1,238 @@
+ body {
+  /* remove margins and scroll bars */
+  margin: 0;
+  overflow: hidden;
+
+  /* style text */
+  text-align: center;
+  font-family:Monospace;
+  font-size:13px;
+
+  /* color text */
+  color: #61443e;
+
+  background-color: #000000;
+}
+
+#scene-container {
+  /* tell our scene container to take up the full page */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /*
+    Set the container's background color to the same as the scene's
+    background to prevent flashing on load
+  */
+  background-color: #000000;
+}
+
+
+/*
+#container {
+  position: absolute;
+ 
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: 16px;
+  margin: auto;
+}
+*/
+
+
+
+/*             */
+/* #start-menu */
+/*             */
+
+#start-menu {
+  z-index: 1;
+  position: absolute;
+ 
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: 24px;
+  padding: 16px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+}
+
+#play {
+  position: absolute;
+ 
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+#start-menu-background {
+  z-index: -1;
+  position: absolute;
+
+  background-image: url("/assets/img/background.jpg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*           */
+/* #settings */
+/*           */
+
+#settings {
+  z-index: 1;
+  position: absolute;
+ 
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 10%;
+  color: #0712E8;
+
+  visibility: hidden;
+}
+
+#settings-background {
+  z-index: -1;
+  position: absolute;
+
+  background-image: url("/assets/img/background_settings.jpg");
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#resume-restart {
+  position: absolute;
+  bottom: 20%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+
+/*     */
+/* #ui */
+/*     */
+
+#in-game-ui {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+/*             */
+/* #in-game-ui */
+/*             */
+
+#info {
+  position: absolute;
+  top: 0px; width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  color: #a06851;
+  pointer-events: none;
+}
+
+#speedometer {
+  color: #ffffff;
+  background-color: #990000;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#score {
+  color: #ffffff;
+  background-color: #a5a201;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#health {
+  color: #ffffff;
+  background-color: #18ad31;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#level {
+  color: #ffffff;
+  background-color: #6812ad;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#tauch-controls {
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+
+  pointer-events: auto;
+  position: absolute;
+  
+  pointer-events: none;
+}
+
+
+
+/*             */
+/* #fullscreen */
+/*             */
+
+#fullscreen {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 160px;
+}
+
+#settings-button {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 100px;
+}
